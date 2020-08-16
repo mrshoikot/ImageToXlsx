@@ -1,1 +1,1 @@
-Install the dependencies inside requirements.txt and run test.py
+Install the dependencies inside requirements.txt and run tool.py
