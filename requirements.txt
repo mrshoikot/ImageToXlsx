@@ -1,0 +1,5 @@
+xlsxwriter
+pytesseract
+Pillow
+opencv-python
+tqdm
