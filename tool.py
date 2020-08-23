@@ -5,6 +5,8 @@ from PIL import Image
 import cv2
 from tqdm import tqdm, tqdm_gui
 
+if os.name == 'nt':
+    pytesseract.pytesseract.tesseract_cmd = 'C:\\Program Files (x86)\\Tesseract-OCR\\tesseract.exe'
 
 lineHeight = 4
 rowHeight = 28
