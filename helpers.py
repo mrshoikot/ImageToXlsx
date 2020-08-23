@@ -31,7 +31,7 @@ class Row:
             # cv2.imshow("rowImage", colImage)
             # cv2.waitKey(0)
 
-            text = pytesseract.image_to_string(colImage, config='--psm 6')
+            text = pytesseract.image_to_string(colImage, config=r'--oem 3 --psm 6')
             self.data.append(text.strip())
 
             pos = coord

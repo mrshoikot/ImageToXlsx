@@ -3,3 +3,4 @@ pytesseract
 Pillow
 opencv-python
 tqdm
+numpy
