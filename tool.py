@@ -20,8 +20,6 @@ worksheet = excel['worksheet']
 workbook = excel['workbook']
 
 
-
-
 files = getFiles()
 rowCount = 1
 
@@ -58,9 +56,11 @@ try:
             rowCount += 1
 
     workbook.close()
+    input("Press enter to exit...")
 
-except KeyboardInterrupt:
+except:
     workbook.close()
+    input("Press enter to exit...")
     exit()
 
 
