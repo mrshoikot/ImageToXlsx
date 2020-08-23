@@ -33,8 +33,7 @@ try:
         img = cv2.imread(path)
         img = cv2.resize(img, (w, 4096))
 
-        deskew = deskew(img)
-        img = get_grayscale(deskew)
+        img = get_grayscale(img)
 
 
         for i in tqdm(range(1,100+1)):
@@ -58,8 +57,9 @@ try:
     workbook.close()
     input("Press enter to exit...")
 
-except:
+except Exception as error:
     workbook.close()
+    print(error)
     input("Press enter to exit...")
     exit()
 
